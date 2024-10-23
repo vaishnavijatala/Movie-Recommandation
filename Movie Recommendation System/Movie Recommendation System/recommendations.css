@@ -1,0 +1,108 @@
+/* recommendations.css for recommendations.html */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('HD-wallpaper-movie-poster-poster-collage-movie-cg.jpg'); /* Replace with your image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    overflow-y: auto; /* Ensure page is scrollable */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker background for contrast */
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.recommended-movies h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Remove styles for .movies-list to accommodate carousel */
+/* .movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+} */
+
+/* Adjust styles for carousel */
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Ensure rounded corners for images */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+    width: auto; /* Adjust width as needed */
+    border-radius: 10px; /* Rounded corners for controls */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #fff; /* White color for control icons */
+}
+
+.carousel-control-prev {
+    left: -30px; /* Adjust position of previous control */
+}
+
+.carousel-control-next {
+    right: -30px; /* Adjust position of next control */
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Change to block to center with margin auto */
+    margin: 70px auto; /* Center horizontally */
+    transition: background 0.3s ease; /* Smooth background transition */
+    width: fit-content; /* Adjust button width to fit content */
+}
+
+.btn:hover {
+    background: #0056b3; /* Darker shade of blue on hover */
+}

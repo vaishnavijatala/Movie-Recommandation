@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find Your Perfect Movie</h1>
+        </header>
+        
+        <!-- Survey Form -->
+        <section class="survey">
+            <h2>Let's find a movie for you!</h2>
+            <form id="survey-form">
+                <!-- Question 1: Movie Mood -->
+                <div class="question active" id="question-1">
+                    <div class="input-container">
+                    <label for="movie-mood">What mood are you in?</label>
+                    <select id="movie-mood" class="select-box">
+                        <option value="">Select Mood</option>
+                        <option value="happy">Happy</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="sad">Downhearted</option>
+                    </select>
+                    <button type="button" class="btn next-btn" data-next="question-2">Next</button>
+                </div>
+                </div>
+                <!-- Question 2: Preferred Genre -->
+                <div class="question" id="question-2">
+                    <div class="input-container">
+                    <label for="preferred-genre">Preferred Genre:</label>
+                    <select id="preferred-genre" class="select-box">
+                        <option value="">Select Genre</option>
+                        <option value="rocketscience">Science</option>
+                        <option value="romance">Romance</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="horror">Horror</option>
+                        <option value="action">Action</option>
+                    </select>
+                    <button type="button" class="btn next-btn" data-next="question-3">Next</button>
+                </div>
+                </div>
+                <!-- Question 3: Occasion -->
+                <div class="question" id="question-3">
+                    <div class="input-container">
+                    <label for="occasion">Who are you watching with?:</label>
+                    <select id="occasion" class="select-box">
+                        <option value="">Select an Occasion</option>
+                        <option value="solo">Solo Movie Date</option>
+                        <option value="friends">Movie Night With Friends</option>
+                        <option value="date">Movie Date with GF/BF</option>
+                        <option value="family">Movie Night With Family</option>
+                    </select>
+                    <button type="button" class="btn next-btn" data-next="question-4">Next</button>
+                </div>
+                </div>
+                <!-- Question 4: Preferred Year -->
+                <div class="question" id="question-4">
+                    <div class="input-container">
+                    <label for="preferred-year">Preferred Year:</label>
+                    <select id="preferred-year" class="select-box">
+                        <option value="">Select Year</option>
+                        <option value="all">All</option>
+                        <option value="2020-2024">2020-2024</option>
+                        <option value="2010-2019">2010-2019</option>
+                        <option value="2000-2009">2000-2009</option>
+                        <option value="1990-1999">1990-1999</option>
+                    </select>
+                    <button type="button" class="btn next-btn" data-next="question-5">Next</button>
+                </div>
+                </div>
+                <!-- Question 5: Preferred Industry -->
+                <div class="question" id="question-5">
+                    <div class="input-container">
+                    <label for="preferred-industry">Preferred Movie Industry:</label>
+                    <select id="preferred-industry" class="select-box">
+                        <option value="">Select Movie Industry</option>
+                        <option value="hollywood">Hollywood</option>
+                        <option value="bollywood">Bollywood</option>
+                        <option value="tollywood">Tollywood</option>
+                    </select>
+                    <button type="button" class="btn next-btn" data-next="question-6">Next</button>
+                </div>
+                </div>
+                <!-- Question 6: Preferred Rating -->
+                <div class="question" id="question-6">
+                    <div class="input-container">
+                    <label for="preferred-rating">Preferred Movie Rating:</label>
+                    <select id="preferred-rating" class="select-box">
+                        <option value="">Select Movie Rating</option>
+                        <option value="5star">5 Star</option>
+                        <option value="4star">4 Star</option>
+                        <option value="3star">3 Star</option>
+                    </select>
+                    <button type="button" id="recommend-btn" class="btn">Get Recommendations</button>
+                </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
